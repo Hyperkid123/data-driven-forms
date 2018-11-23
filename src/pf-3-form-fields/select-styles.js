@@ -1,4 +1,14 @@
 const customStyles = {
+  indicatorSeparator: () => ({
+    display: 'none',
+  }),
+  input: provided => ({
+    ...provided,
+    marginLeft: 0,
+    fontWeight: '600',
+    color: 'rgb(54, 54, 54)',
+    'line-height': '0.8em',
+  }),
   placeholder: provided => ({
     ...provided,
     lineHeight: 25,
@@ -8,7 +18,7 @@ const customStyles = {
     paddingLeft: 0,
     marginLeft: 0,
   }),
-  option: (provided, { isFocused, isSelected }) => ({
+  option: (provided, { isFocused, isSelected, isMulti }) => ({
     ...provided,
     'background-color': isSelected ? '#0088ce' : isFocused ? '#def3ff' : '#ffffff',
     'border-color': isSelected ? '#0088ce' : isFocused ? '#bee1f4' : 'transparent',
@@ -18,6 +28,12 @@ const customStyles = {
     padding: '1px 10px',
     fontWeight: '400',
     cursor: 'pointer',
+    '&::after': {
+      fontFamily: 'FontAwesome',
+      color: isMulti && isSelected ? 'white' : null,
+      content: isMulti && isSelected ? '" \\f00c "' : null,
+      float: isMulti ? 'right' : 'initial',
+    },
   }),
   dropdownIndicator: provided => ({
     ...provided,
@@ -31,12 +47,13 @@ const customStyles = {
     border: '1px solid transparent',
     'border-color': 'rgb(187, 187, 187)',
   }),
-  singleValue: provided => ({
+  singleValue: (provided, { selectProps: { isSearchable }}) => ({
     ...provided,
     height: 25,
     minHeight: 20,
     'font-size': 12,
-    'line-height': '1em',
+    'line-height': isSearchable ? '1em' : '0.8em',
+    marginLeft: 0,
     top: '75%',
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
@@ -72,6 +89,38 @@ const customStyles = {
       'border-color': '#bbbbbb',
       color: '#4d5258',
     },
+  }),
+  multiValue: provided => ({
+    ...provided,
+    background: 'transparent',
+    marginRight: 0,
+    '&:nth-last-child(2)': {
+      marginRight: 2,
+    },
+    '&:not(:first-child)': {
+      '::before': {
+        content: '",\\00a0"',
+        lineHeight: '2em',
+        'font-size': 12,
+        paddingLeft: 0,
+        paddingRight: 0,
+        fontWeight: '600',
+        color: 'rgb(54, 54, 54)',
+      },
+    },
+  }),
+  multiValueRemove: () => ({
+    display: 'none',
+  }),
+  multiValueLabel: (provided, state) => ({
+    ...provided,
+    height: 25,
+    minHeight: 20,
+    'font-size': 12,
+    paddingLeft: 0,
+    paddingRight: 0,
+    fontWeight: '600',
+    color: 'rgb(54, 54, 54)',
   }),
 };
 

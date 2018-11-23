@@ -13,8 +13,7 @@ import ComponentType from '../renderer-context';
 import Condition from '../shared-components/condition';
 import customStyles from './select-styles';
 
-const selectValue = option =>
-  option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
+const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
 
 const selectComponent = ({
   componentType,
@@ -26,6 +25,7 @@ const selectComponent = ({
   placeholder,
   isRequired,
   label,
+  isSearchable,
   ...rest
 }) => ({
   [components.TEXT_FIELD]: () => <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
@@ -47,12 +47,15 @@ const selectComponent = ({
       className={ `final-form-select ${invalid ? 'has-error' : ''}` }
       styles={ customStyles }
       { ...input }
-      options={options.filter(option => option.hasOwnProperty('value'))} // eslint-disable-line
+      options={options.filter(option => option.hasOwnProperty('value') && option.value !== null)} // eslint-disable-line
       placeholder={ placeholder || __('Please choose') }
-      value={ options.filter(({ value }) => value === input.value) }
-      multi={ false }
-      isSearchable={ false }
-      isClearable={ !isRequired }
+      value={ options.filter(({ value }) => rest.multi ? input.value.includes(value) : value === input.value) }
+      isMulti={ rest.multi }
+      isSearchable={ !!isSearchable }
+      isClearable={ false }
+      hideSelectedOptions={ false }
+      closeMenuOnSelect={ !rest.multi }
+      noOptionsMessage={ () => __('No option found') }
       onChange={ option =>
         input.onChange(rest.multi ? selectValue(option) : option ? option.value : undefined) } // eslint-disable-line no-nested-ternary
       { ...rest }

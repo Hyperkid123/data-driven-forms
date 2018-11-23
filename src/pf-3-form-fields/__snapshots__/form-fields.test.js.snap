@@ -124,14 +124,16 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
       >
         <StateManager
           className="final-form-select has-error"
+          closeMenuOnSelect={true}
           defaultInputValue=""
           defaultMenuIsOpen={false}
           defaultValue={null}
+          hideSelectedOptions={false}
           id="select-field"
-          isClearable={true}
+          isClearable={false}
           isSearchable={false}
-          multi={false}
           name="select-field"
+          noOptionsMessage={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -153,7 +155,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
               "container": [Function],
               "control": [Function],
               "dropdownIndicator": [Function],
+              "input": [Function],
               "menu": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+              "multiValueRemove": [Function],
               "option": [Function],
               "placeholder": [Function],
               "singleValue": [Function],
@@ -178,9 +184,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
             formatGroupLabel={[Function]}
             getOptionLabel={[Function]}
             getOptionValue={[Function]}
+            hideSelectedOptions={false}
             id="select-field"
             inputValue=""
-            isClearable={true}
+            isClearable={false}
             isDisabled={false}
             isLoading={false}
             isMulti={false}
@@ -195,7 +202,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
             menuShouldBlockScroll={false}
             menuShouldScrollIntoView={true}
             minMenuHeight={140}
-            multi={false}
             name="select-field"
             noOptionsMessage={[Function]}
             onBlur={[Function]}
@@ -226,7 +232,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                 "container": [Function],
                 "control": [Function],
                 "dropdownIndicator": [Function],
+                "input": [Function],
                 "menu": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
                 "option": [Function],
                 "placeholder": [Function],
                 "singleValue": [Function],
@@ -285,9 +295,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                   "formatGroupLabel": [Function],
                   "getOptionLabel": [Function],
                   "getOptionValue": [Function],
+                  "hideSelectedOptions": false,
                   "id": "select-field",
                   "inputValue": "",
-                  "isClearable": true,
+                  "isClearable": false,
                   "isDisabled": false,
                   "isLoading": false,
                   "isMulti": false,
@@ -302,7 +313,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                   "menuShouldBlockScroll": false,
                   "menuShouldScrollIntoView": true,
                   "minMenuHeight": 140,
-                  "multi": false,
                   "name": "select-field",
                   "noOptionsMessage": [Function],
                   "onBlur": [Function],
@@ -331,7 +341,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                     "container": [Function],
                     "control": [Function],
                     "dropdownIndicator": [Function],
+                    "input": [Function],
                     "menu": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
                     "option": [Function],
                     "placeholder": [Function],
                     "singleValue": [Function],
@@ -426,9 +440,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                       "formatGroupLabel": [Function],
                       "getOptionLabel": [Function],
                       "getOptionValue": [Function],
+                      "hideSelectedOptions": false,
                       "id": "select-field",
                       "inputValue": "",
-                      "isClearable": true,
+                      "isClearable": false,
                       "isDisabled": false,
                       "isLoading": false,
                       "isMulti": false,
@@ -443,7 +458,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                       "menuShouldBlockScroll": false,
                       "menuShouldScrollIntoView": true,
                       "minMenuHeight": 140,
-                      "multi": false,
                       "name": "select-field",
                       "noOptionsMessage": [Function],
                       "onBlur": [Function],
@@ -472,7 +486,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                         "container": [Function],
                         "control": [Function],
                         "dropdownIndicator": [Function],
+                        "input": [Function],
                         "menu": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
                         "option": [Function],
                         "placeholder": [Function],
                         "singleValue": [Function],
@@ -559,9 +577,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -576,7 +595,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -605,7 +623,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -692,9 +714,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -709,7 +732,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -738,7 +760,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -851,9 +877,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -868,7 +895,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -897,7 +923,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -983,9 +1013,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -1000,7 +1031,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -1029,7 +1059,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -1123,9 +1157,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -1140,7 +1175,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -1169,7 +1203,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in error state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -1282,14 +1320,16 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
       >
         <StateManager
           className="final-form-select "
+          closeMenuOnSelect={true}
           defaultInputValue=""
           defaultMenuIsOpen={false}
           defaultValue={null}
+          hideSelectedOptions={false}
           id="select-field"
-          isClearable={true}
+          isClearable={false}
           isSearchable={false}
-          multi={false}
           name="select-field"
+          noOptionsMessage={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -1311,7 +1351,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
               "container": [Function],
               "control": [Function],
               "dropdownIndicator": [Function],
+              "input": [Function],
               "menu": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+              "multiValueRemove": [Function],
               "option": [Function],
               "placeholder": [Function],
               "singleValue": [Function],
@@ -1336,9 +1380,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
             formatGroupLabel={[Function]}
             getOptionLabel={[Function]}
             getOptionValue={[Function]}
+            hideSelectedOptions={false}
             id="select-field"
             inputValue=""
-            isClearable={true}
+            isClearable={false}
             isDisabled={false}
             isLoading={false}
             isMulti={false}
@@ -1353,7 +1398,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
             menuShouldBlockScroll={false}
             menuShouldScrollIntoView={true}
             minMenuHeight={140}
-            multi={false}
             name="select-field"
             noOptionsMessage={[Function]}
             onBlur={[Function]}
@@ -1384,7 +1428,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                 "container": [Function],
                 "control": [Function],
                 "dropdownIndicator": [Function],
+                "input": [Function],
                 "menu": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
                 "option": [Function],
                 "placeholder": [Function],
                 "singleValue": [Function],
@@ -1443,9 +1491,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                   "formatGroupLabel": [Function],
                   "getOptionLabel": [Function],
                   "getOptionValue": [Function],
+                  "hideSelectedOptions": false,
                   "id": "select-field",
                   "inputValue": "",
-                  "isClearable": true,
+                  "isClearable": false,
                   "isDisabled": false,
                   "isLoading": false,
                   "isMulti": false,
@@ -1460,7 +1509,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                   "menuShouldBlockScroll": false,
                   "menuShouldScrollIntoView": true,
                   "minMenuHeight": 140,
-                  "multi": false,
                   "name": "select-field",
                   "noOptionsMessage": [Function],
                   "onBlur": [Function],
@@ -1489,7 +1537,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                     "container": [Function],
                     "control": [Function],
                     "dropdownIndicator": [Function],
+                    "input": [Function],
                     "menu": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
                     "option": [Function],
                     "placeholder": [Function],
                     "singleValue": [Function],
@@ -1584,9 +1636,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                       "formatGroupLabel": [Function],
                       "getOptionLabel": [Function],
                       "getOptionValue": [Function],
+                      "hideSelectedOptions": false,
                       "id": "select-field",
                       "inputValue": "",
-                      "isClearable": true,
+                      "isClearable": false,
                       "isDisabled": false,
                       "isLoading": false,
                       "isMulti": false,
@@ -1601,7 +1654,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                       "menuShouldBlockScroll": false,
                       "menuShouldScrollIntoView": true,
                       "minMenuHeight": 140,
-                      "multi": false,
                       "name": "select-field",
                       "noOptionsMessage": [Function],
                       "onBlur": [Function],
@@ -1630,7 +1682,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                         "container": [Function],
                         "control": [Function],
                         "dropdownIndicator": [Function],
+                        "input": [Function],
                         "menu": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
                         "option": [Function],
                         "placeholder": [Function],
                         "singleValue": [Function],
@@ -1717,9 +1773,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -1734,7 +1791,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -1763,7 +1819,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -1850,9 +1910,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -1867,7 +1928,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -1896,7 +1956,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -2009,9 +2073,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -2026,7 +2091,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -2055,7 +2119,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -2141,9 +2209,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -2158,7 +2227,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -2187,7 +2255,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -2281,9 +2353,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -2298,7 +2371,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -2327,7 +2399,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -2431,14 +2507,16 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
       >
         <StateManager
           className="final-form-select "
+          closeMenuOnSelect={true}
           defaultInputValue=""
           defaultMenuIsOpen={false}
           defaultValue={null}
+          hideSelectedOptions={false}
           id="select-field"
-          isClearable={true}
+          isClearable={false}
           isSearchable={false}
-          multi={false}
           name="select-field"
+          noOptionsMessage={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -2460,7 +2538,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
               "container": [Function],
               "control": [Function],
               "dropdownIndicator": [Function],
+              "input": [Function],
               "menu": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+              "multiValueRemove": [Function],
               "option": [Function],
               "placeholder": [Function],
               "singleValue": [Function],
@@ -2485,9 +2567,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
             formatGroupLabel={[Function]}
             getOptionLabel={[Function]}
             getOptionValue={[Function]}
+            hideSelectedOptions={false}
             id="select-field"
             inputValue=""
-            isClearable={true}
+            isClearable={false}
             isDisabled={false}
             isLoading={false}
             isMulti={false}
@@ -2502,7 +2585,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
             menuShouldBlockScroll={false}
             menuShouldScrollIntoView={true}
             minMenuHeight={140}
-            multi={false}
             name="select-field"
             noOptionsMessage={[Function]}
             onBlur={[Function]}
@@ -2533,7 +2615,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                 "container": [Function],
                 "control": [Function],
                 "dropdownIndicator": [Function],
+                "input": [Function],
                 "menu": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
                 "option": [Function],
                 "placeholder": [Function],
                 "singleValue": [Function],
@@ -2592,9 +2678,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                   "formatGroupLabel": [Function],
                   "getOptionLabel": [Function],
                   "getOptionValue": [Function],
+                  "hideSelectedOptions": false,
                   "id": "select-field",
                   "inputValue": "",
-                  "isClearable": true,
+                  "isClearable": false,
                   "isDisabled": false,
                   "isLoading": false,
                   "isMulti": false,
@@ -2609,7 +2696,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                   "menuShouldBlockScroll": false,
                   "menuShouldScrollIntoView": true,
                   "minMenuHeight": 140,
-                  "multi": false,
                   "name": "select-field",
                   "noOptionsMessage": [Function],
                   "onBlur": [Function],
@@ -2638,7 +2724,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                     "container": [Function],
                     "control": [Function],
                     "dropdownIndicator": [Function],
+                    "input": [Function],
                     "menu": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
                     "option": [Function],
                     "placeholder": [Function],
                     "singleValue": [Function],
@@ -2733,9 +2823,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                       "formatGroupLabel": [Function],
                       "getOptionLabel": [Function],
                       "getOptionValue": [Function],
+                      "hideSelectedOptions": false,
                       "id": "select-field",
                       "inputValue": "",
-                      "isClearable": true,
+                      "isClearable": false,
                       "isDisabled": false,
                       "isLoading": false,
                       "isMulti": false,
@@ -2750,7 +2841,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                       "menuShouldBlockScroll": false,
                       "menuShouldScrollIntoView": true,
                       "minMenuHeight": 140,
-                      "multi": false,
                       "name": "select-field",
                       "noOptionsMessage": [Function],
                       "onBlur": [Function],
@@ -2779,7 +2869,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                         "container": [Function],
                         "control": [Function],
                         "dropdownIndicator": [Function],
+                        "input": [Function],
                         "menu": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
                         "option": [Function],
                         "placeholder": [Function],
                         "singleValue": [Function],
@@ -2866,9 +2960,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -2883,7 +2978,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -2912,7 +3006,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -2999,9 +3097,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -3016,7 +3115,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -3045,7 +3143,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -3158,9 +3260,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "formatGroupLabel": [Function],
                           "getOptionLabel": [Function],
                           "getOptionValue": [Function],
+                          "hideSelectedOptions": false,
                           "id": "select-field",
                           "inputValue": "",
-                          "isClearable": true,
+                          "isClearable": false,
                           "isDisabled": false,
                           "isLoading": false,
                           "isMulti": false,
@@ -3175,7 +3278,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                           "menuShouldBlockScroll": false,
                           "menuShouldScrollIntoView": true,
                           "minMenuHeight": 140,
-                          "multi": false,
                           "name": "select-field",
                           "noOptionsMessage": [Function],
                           "onBlur": [Function],
@@ -3204,7 +3306,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                             "container": [Function],
                             "control": [Function],
                             "dropdownIndicator": [Function],
+                            "input": [Function],
                             "menu": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
                             "option": [Function],
                             "placeholder": [Function],
                             "singleValue": [Function],
@@ -3290,9 +3396,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -3307,7 +3414,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -3336,7 +3442,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
@@ -3430,9 +3540,10 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "formatGroupLabel": [Function],
                               "getOptionLabel": [Function],
                               "getOptionValue": [Function],
+                              "hideSelectedOptions": false,
                               "id": "select-field",
                               "inputValue": "",
-                              "isClearable": true,
+                              "isClearable": false,
                               "isDisabled": false,
                               "isLoading": false,
                               "isMulti": false,
@@ -3447,7 +3558,6 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                               "menuShouldBlockScroll": false,
                               "menuShouldScrollIntoView": true,
                               "minMenuHeight": 140,
-                              "multi": false,
                               "name": "select-field",
                               "noOptionsMessage": [Function],
                               "onBlur": [Function],
@@ -3476,7 +3586,11 @@ exports[`Pf3 form fields <SelectField /> should render correctly in valid state 
                                 "container": [Function],
                                 "control": [Function],
                                 "dropdownIndicator": [Function],
+                                "input": [Function],
                                 "menu": [Function],
+                                "multiValue": [Function],
+                                "multiValueLabel": [Function],
+                                "multiValueRemove": [Function],
                                 "option": [Function],
                                 "placeholder": [Function],
                                 "singleValue": [Function],
