@@ -14,7 +14,15 @@ const memoize = (fn) => {
 };
 
 const stringValidator = memoize(({ message } = { message: 'Field value has to be string' }) =>
-  value => (!value ? undefined : typeof value === 'string' ? undefined : message));
+  value => {
+    if (Array.isArray(value)) {
+      const nonString = value.filter(item => typeof item !== 'string');
+      return nonString.length > 0 ? `Some field values are not string: ${nonString.toString()}` : undefined;
+    }
+
+    return (!value ? undefined : typeof value === 'string' ? undefined : message);
+  }
+);
 const booleanValidator = memoize(({ message } = { message: 'Field value has to be boolean' }) =>
   value => (!value ? undefined : typeof value === 'boolean'
     ? undefined : value === 'true' || value === 'false' ? undefined : message));
